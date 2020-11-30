@@ -19,10 +19,15 @@
 #define PLAY_BUTTON_FILEPATH "Resources/res/PlayButton.png"
 
 // gameOverState
-//?? #define GAME_OVER_BACKGROUND_FILEPATH "Resources/res/"
 #define GAME_OVER_TITLE_FILEPATH "Resources/res/Game-Over-Title.png"
 #define GAME_OVER_BODY_FILEPATH "Resources/res/Game-Over-Body.png"
 
 // pipe
 #define PIPE_UP_FILEPATH "Resources/res/PipeUp.png"
 #define PIPE_DOWN_FILEPATH "Resources/res/PipeDown.png"
+#define PIPE_MOVEMENT_SPEED 200.0f
+#define PIPE_SPAWN_FREQUENCY 3.0f
+#define MAX_PIPE_HEIGHT 261
+
+// land
+#define LAND_FILEPATH "Resources/res/Land.png"

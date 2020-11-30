@@ -11,6 +11,7 @@
 #include "game.h"
 #include "state.hpp"
 #include "pipe.h"
+#include "land.h"
 #include <sstream>
 #include <iostream>
 
@@ -26,11 +27,15 @@ private:
                         //donne accès au stateMachine, au RenderWindow, au
                         //assertManager et au inputManager
 
+    Clock _clock;
+
     Sprite _background; //le sprite pour la background
     pipe* _pipe;        //un pointeur de pipe
+    land* _land;
 
 public:
     gameState(gameDataRef data);
+    ~gameState();
 
     void init();
     void handleInput();

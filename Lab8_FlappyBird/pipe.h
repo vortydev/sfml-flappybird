@@ -18,9 +18,15 @@ class pipe
 private:
     gameDataRef _data;
     list<Sprite> _pipeSprites;
+    int _pipeSpawnYOffset;
 
 public:
     pipe(gameDataRef data);
     void drawPipes()/*const*/;
+
+    void spawnTopPipe();
+    void spawnBottomPipe();
+    void movePipes(float dt);
+    void randomisePipeOffset();
 };
 

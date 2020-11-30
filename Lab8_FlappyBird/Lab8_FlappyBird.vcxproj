@@ -146,6 +146,7 @@
     <ClCompile Include="gameOverState.cpp" />
     <ClCompile Include="gameState.cpp" />
     <ClCompile Include="inputManager.cpp" />
+    <ClCompile Include="land.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mainMenuState.cpp" />
     <ClCompile Include="pipe.cpp" />
@@ -159,6 +160,7 @@
     <ClInclude Include="gameOverState.h" />
     <ClInclude Include="gameState.h" />
     <ClInclude Include="inputManager.h" />
+    <ClInclude Include="land.h" />
     <ClInclude Include="mainMenuState.h" />
     <ClInclude Include="pipe.h" />
     <ClInclude Include="splashState.h" />

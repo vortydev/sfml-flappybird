@@ -12,10 +12,13 @@
 
 game::game(int width, int height, string title)
 {
+    srand(time(0));
+
     _data = make_shared<gameData>(); //création de la game en mémoire dynamique
     //création de la fenêtre qui changera de contenu selon la state créée ensuite
     _data->window.create(VideoMode(width, height), title, Style::Close | Style::Titlebar);
     _data->machine.addState(stateRef(new splashState(_data)));
+
     run();
 }
 

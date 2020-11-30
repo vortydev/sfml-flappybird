@@ -10,6 +10,7 @@
 #include "DEFINITIONS.hpp"
 #include "game.h"
 #include "state.hpp"
+#include "mainMenuState.h"
 #include <sstream>
 #include <iostream>
 

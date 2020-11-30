@@ -10,8 +10,10 @@
 #include "DEFINITIONS.hpp"
 #include "game.h"
 #include "state.hpp"
+#include "gameState.h"
 #include <sstream>
 #include <iostream>
+#include <fstream>
 
 using namespace sf;
 using namespace std;
@@ -25,12 +27,20 @@ private:
                         //donne accès au stateMachine, au RenderWindow, au
                         //assertManager et au inputManager
 
-    Sprite _background; //le sprite pour la background
-    Sprite _title;
-    Sprite _body;
+    Sprite _background;
+    Sprite _gameOverTitle;
+    Sprite _gameOverContainer;
+    Sprite _retryButton;
+    Sprite _medal;
+
+    Text _scoreText;
+    Text _highScoreText;
+
+    int _score;
+    int _highScore;
 
 public:
-    gameOverState(gameDataRef data);
+    gameOverState(gameDataRef data, int score);
 
     void init();
     void handleInput();

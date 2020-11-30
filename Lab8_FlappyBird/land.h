@@ -21,7 +21,9 @@ private:
 
 public:
     land(gameDataRef data);
-    void drawLand()/*const*/;
+    void drawLand()const;
     void moveLand(float dt);
+
+    const vector<Sprite>& getSprites()const;
 };
 

@@ -23,7 +23,7 @@ land::land(gameDataRef data) : _data(data)
     _landSprites.push_back(sprite2);
 }
 
-void land::drawLand() /*const*/
+void land::drawLand() const
 {
     for (int i = 0; i < _landSprites.size(); i++) 
     {
@@ -44,4 +44,9 @@ void land::moveLand(float dt)
             _landSprites.at(i).setPosition(position);
         }
     }
-}   
+}
+
+const vector<Sprite>& land::getSprites()const
+{
+    return _landSprites;
+}

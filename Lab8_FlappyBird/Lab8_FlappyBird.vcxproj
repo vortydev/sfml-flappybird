@@ -143,9 +143,12 @@
   <ItemGroup>
     <ClCompile Include="assetManager.cpp" />
     <ClCompile Include="bird.cpp" />
+    <ClCompile Include="collision.cpp" />
+    <ClCompile Include="flash.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="gameOverState.cpp" />
     <ClCompile Include="gameState.cpp" />
+    <ClCompile Include="hud.cpp" />
     <ClCompile Include="inputManager.cpp" />
     <ClCompile Include="land.cpp" />
     <ClCompile Include="main.cpp" />
@@ -157,10 +160,13 @@
   <ItemGroup>
     <ClInclude Include="assetManager.h" />
     <ClInclude Include="bird.h" />
+    <ClInclude Include="collision.h" />
     <ClInclude Include="DEFINITIONS.hpp" />
+    <ClInclude Include="flash.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="gameOverState.h" />
     <ClInclude Include="gameState.h" />
+    <ClInclude Include="hud.h" />
     <ClInclude Include="inputManager.h" />
     <ClInclude Include="land.h" />
     <ClInclude Include="mainMenuState.h" />
@@ -168,6 +174,9 @@
     <ClInclude Include="splashState.h" />
     <ClInclude Include="state.hpp" />
     <ClInclude Include="stateMachine.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Resources\highScore.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

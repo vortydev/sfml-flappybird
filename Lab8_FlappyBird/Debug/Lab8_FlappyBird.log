@@ -1,6 +1,3 @@
-﻿  bird.cpp
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\bird.cpp(44,32): warning C4018: '>=' : incompatibilité signed/unsigned
-  gameState.cpp
-  mainMenuState.cpp
-  Génération de code en cours...
+﻿  gameState.cpp
+C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\gameState.cpp(116,27): warning C4018: '<' : incompatibilité signed/unsigned
   Lab8_FlappyBird.vcxproj -> C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Debug\Lab8_FlappyBird.exe

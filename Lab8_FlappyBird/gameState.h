@@ -7,16 +7,18 @@
 
 #pragma once
 #include <SFML/Graphics.hpp>
+#include <sstream>
+#include <iostream>
 #include "DEFINITIONS.hpp"
 #include "game.h"
 #include "state.hpp"
-
+#include "gameOverState.h"
 #include "pipe.h"
 #include "land.h"
 #include "bird.h"
-
-#include <sstream>
-#include <iostream>
+#include "collision.h"
+#include "flash.h"
+#include "hud.h"
 
 using namespace sf;
 using namespace std;
@@ -32,10 +34,18 @@ private:
 
     Clock _clock;
 
+    int _gameState; // état du jeu
+    int _score;     // score du joueur
+
     Sprite _background; //le sprite pour la background
+
     pipe* _pipe;        //un pointeur de pipe
     land* _land;
     bird* _bird;
+    flash* _flash;
+    hud* _hud;
+
+    collision _collision;
 
 public:
     gameState(gameDataRef data);

@@ -9,6 +9,7 @@
 #include <SFML/Graphics.hpp>
 #include "DEFINITIONS.hpp"
 #include "game.h"
+#include "gameState.h"
 #include "state.hpp"
 #include <sstream>
 #include <iostream>

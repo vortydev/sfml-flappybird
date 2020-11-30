@@ -6,7 +6,6 @@
  */
 
 #include "splashState.h"
-#include "mainMenuState.h"
 
  //le constructeur utilise les : pour initialiser _data avant même l’exécution du contenu{}
 splashState::splashState(gameDataRef data) : _data(data)

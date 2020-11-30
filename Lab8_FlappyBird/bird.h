@@ -2,12 +2,13 @@
  * Author:		Étienne Ménard
  * Date:		29/11/2020
  * File:		bird.h
- * Description:	Personnage jouable. Le but est de le naviguer
+ * Description:	Personnage jouable. Le but est de le naviguer entre des pipes afin de gagner des points.
  */
 
 #pragma once
 #include <SFML/Graphics.hpp>
 #include "DEFINITIONS.hpp"
+#include <vector>
 #include "game.h"
 
 using namespace sf;
@@ -35,4 +36,6 @@ public:
 
     void update(float dt);
     void tap();
+
+    const Sprite& getSprite()const;
 };

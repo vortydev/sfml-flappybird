@@ -86,3 +86,8 @@ void bird::tap()
     _mouvementClock.restart(); //si on click, on call tap qui reset la clock
     _birdState = BIRD_STATE_FLYING; //et met le state à FLYING
 }
+
+const Sprite& bird::getSprite() const
+{
+    return _birdSprite;
+}

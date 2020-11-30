@@ -2,7 +2,7 @@
  * Author:		Étienne Ménard
  * Date:		29/11/2020
  * File:		pipe.h
- * Description:	Le pipe est un obstacle généré automatiquement de hauteur aléatoire que le joueur doit éviter afin de progresser et gagner des points.
+ * Description:	Le pipe est un obstacle généré automatiquement de hauteur aléatoire.
  */
 
 #pragma once
@@ -18,6 +18,7 @@ class pipe
 private:
     gameDataRef _data;
     list<Sprite> _pipeSprites;
+    list<Sprite> _scoringPipes; //position des pipes invisibles
     int _pipeSpawnYOffset;
 
 public:
@@ -26,7 +27,11 @@ public:
 
     void spawnTopPipe();
     void spawnBottomPipe();
+    void spawnScoringPipe();
+
     void movePipes(float dt);
     void randomisePipeOffset();
-};
 
+    list<Sprite>& getSprites();
+    list<Sprite>& getScoringSprites();
+};

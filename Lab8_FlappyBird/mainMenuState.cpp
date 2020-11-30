@@ -6,7 +6,6 @@
  */
 
 #include "mainMenuState.h"
-#include "gameState.h"
 
  //le constructeur utilise les : pour initialiser _data avant même l’exécution du contenu{}
 mainMenuState::mainMenuState(gameDataRef data) : _data(data)

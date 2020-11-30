@@ -1,33 +1,6 @@
-﻿  game.cpp
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\game.cpp(15,15): warning C4244: 'argument' : conversion de 'time_t' en 'unsigned int', perte possible de données
-  gameOverState.cpp
+﻿  bird.cpp
+C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\bird.cpp(44,32): warning C4018: '>=' : incompatibilité signed/unsigned
   gameState.cpp
-  land.cpp
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\land.cpp(28,23): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\land.cpp(36,23): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\land.cpp(43,54): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
-          with
-          [
-              T=unsigned int
-          ]
-          and
-          [
-              T=float
-          ]
-  main.cpp
   mainMenuState.cpp
-  pipe.cpp
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\pipe.cpp(24,47): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
-          with
-          [
-              T=unsigned int
-          ]
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\pipe.cpp(31,53): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Lab8_FlappyBird\pipe.cpp(31,47): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
-          with
-          [
-              T=unsigned int
-          ]
-  splashState.cpp
   Génération de code en cours...
   Lab8_FlappyBird.vcxproj -> C:\Users\Etienne\Documents\École\Cégep - Automne 2020\Structures de données dans les jeux\Lab8_FlappyBird\Debug\Lab8_FlappyBird.exe

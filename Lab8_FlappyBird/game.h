@@ -36,5 +36,3 @@ public:
     game(int width, int height, string title);
     void run();
 };
-
-

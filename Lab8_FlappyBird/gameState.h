@@ -10,8 +10,11 @@
 #include "DEFINITIONS.hpp"
 #include "game.h"
 #include "state.hpp"
+
 #include "pipe.h"
 #include "land.h"
+#include "bird.h"
+
 #include <sstream>
 #include <iostream>
 
@@ -32,6 +35,7 @@ private:
     Sprite _background; //le sprite pour la background
     pipe* _pipe;        //un pointeur de pipe
     land* _land;
+    bird* _bird;
 
 public:
     gameState(gameDataRef data);

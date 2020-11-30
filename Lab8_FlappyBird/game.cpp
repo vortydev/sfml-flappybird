@@ -57,4 +57,3 @@ void game::run()
         _data->machine.getActiveState()->draw(interpolation);
     }
 }
-

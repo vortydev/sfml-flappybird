@@ -10,6 +10,7 @@
  //le constructeur utilise les : pour initialiser _data avant même l’exécution du contenu{}
 gameOverState::gameOverState(gameDataRef data, int score) : _data(data), _score(score)
 {
+    _highScore = 0;
 }
 
 //load l’image du background à l’aide du assetManager ds _data et la set au Sprite

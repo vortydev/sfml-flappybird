@@ -16,6 +16,7 @@ bool collision::checkSpriteCollision(Sprite sprite1, Sprite sprite2) const
     return rect1.intersects(rect2); //true, ils entrent en contact, false sinon
 }
 
+// check les collision mais avec un scale qu'on peut modifier
 bool collision::checkSpriteCollision(Sprite sprite1, float scale1, Sprite sprite2, float scale2) const
 {
     sprite1.setScale(scale1, scale1);

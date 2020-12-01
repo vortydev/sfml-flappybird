@@ -31,4 +31,3 @@ public:
 	void processStateChanges();
 	stateRef& getActiveState(); //pas de const pour ce getteur, car il est setteur aussi
 };
-

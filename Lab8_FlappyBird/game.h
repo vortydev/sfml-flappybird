@@ -6,13 +6,14 @@
  */
 
 #pragma once
+#include <SFML/Graphics.hpp>
 #include <string>
 #include <memory>
+#include <time.h>
 #include "state.hpp"
 #include "stateMachine.h"
 #include "assetManager.h"
 #include "inputManager.h"
-#include <SFML/Graphics.hpp>
 
 using namespace sf;
 using namespace std;

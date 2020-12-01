@@ -39,7 +39,7 @@ enum gameStates {
 #define SCORING_PIPE_FILEPATH "Resources/res/InvisibleScoringPipe.png"
 
 #define PIPE_MOVEMENT_SPEED 200.0f
-#define PIPE_SPAWN_FREQUENCY 1.0f // normal: 3.0
+#define PIPE_SPAWN_FREQUENCY 3.0f // normal: 3.0
 #define MAX_PIPE_HEIGHT 261
 
 // land
@@ -74,3 +74,8 @@ enum gameStates {
 #define SILVER_MEDAL_SCORE 5
 #define GOLD_MEDAL_SCORE 25
 #define PLATINUM_MEDAL_SCORE 100
+
+// sounds
+#define HIT_SOUND_FILEPATH "Resources/audio/Hit.wave"
+#define POINT_SOUND_FILEPATH "Resources/audio/Point.wave"
+#define WING_SOUND_FILEPATH "Resources/audio/Wing.wave"

@@ -26,4 +26,3 @@ public:
 
     const vector<Sprite>& getSprites()const;
 };
-

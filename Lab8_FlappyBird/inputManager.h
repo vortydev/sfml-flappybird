@@ -17,5 +17,3 @@ public:
     bool isSpriteClicked(const Sprite& object, Mouse::Button button, RenderWindow& window);
     Vector2i getMousePosition(RenderWindow& window) const;
 };
-
-

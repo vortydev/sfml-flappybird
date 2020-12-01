@@ -7,6 +7,7 @@
 
 #pragma once
 #include <SFML/Graphics.hpp>
+//#include <SFML/Audio.hpp>
 #include <sstream>
 #include <iostream>
 #include "DEFINITIONS.hpp"
@@ -46,6 +47,15 @@ private:
     hud* _hud;
 
     collision _collision;
+
+    // audio
+    /*SoundBuffer _hitSoundBuffer;
+    SoundBuffer _pointSoundBuffer;
+    SoundBuffer _wingSoundBuffer;
+
+    Sound _hitSound;
+    Sound _pointSound;
+    Sound _wingSound;*/
 
 public:
     gameState(gameDataRef data);

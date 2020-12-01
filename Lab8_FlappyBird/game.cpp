@@ -7,8 +7,6 @@
 
 #include "game.h"
 #include "splashState.h"
-#include <stdlib.h>
-#include <time.h>
 
 game::game(int width, int height, string title)
 {

@@ -25,4 +25,3 @@ public:
     void loadFont(string name, string fileName);
     Font& getFont(string name);         //pas de const pour ce getteur, car setteur aussi
 };
-

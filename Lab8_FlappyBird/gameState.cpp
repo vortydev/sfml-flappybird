@@ -66,7 +66,7 @@ void gameState::init()
     // load flash
     _flash = new flash(_data);
 
-    /*if (!_hitSoundBuffer.loadFromFile(HIT_SOUND_FILEPATH)) {
+    if (!_hitSoundBuffer.loadFromFile(HIT_SOUND_FILEPATH)) {
         cout << "erreur loading sound effect" << endl;
     }
     if (!_wingSoundBuffer.loadFromFile(WING_SOUND_FILEPATH)) {
@@ -77,7 +77,7 @@ void gameState::init()
     }
     _hitSound.setBuffer(_hitSoundBuffer);
     _wingSound.setBuffer(_wingSoundBuffer);
-    _pointSound.setBuffer(_pointSoundBuffer);*/
+    _pointSound.setBuffer(_pointSoundBuffer);
 }
 
 //fenêtre qui reste ouverte tant qu’elle n’est pas fermée
@@ -94,7 +94,7 @@ void gameState::handleInput()
             if (_gameState != gameStates::gameOver) {
                 _gameState = gameStates::playing;
                 _bird->tap();
-                //_wingSound.play();
+                _wingSound.play();
             }
         }
     }
@@ -132,7 +132,7 @@ void gameState::update(float dt)
                 _gameState = gameStates::gameOver;
                 _clock.restart();
 
-                //_hitSound.play();
+                _hitSound.play();
             }
 
         //Après on check les collisions avec les pipes
@@ -140,6 +140,8 @@ void gameState::update(float dt)
             if (_collision.checkSpriteCollision(_bird->getSprite(), 0.625f, *it, 1.0f)) {
                 _gameState = gameStates::gameOver;
                 _clock.restart();
+
+                _hitSound.play();
             }
         }
 
@@ -154,7 +156,7 @@ void gameState::update(float dt)
 
                     itS = _pipe->getScoringSprites().erase(itS);
 
-                    //_pointSound.play();
+                    _pointSound.play();
                 }
                 else
                     itS++;
